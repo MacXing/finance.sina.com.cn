@@ -1,0 +1,1640 @@
+2018-03-13 16:39:06 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: finance)
+2018-03-13 16:39:06 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.4, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2n  7 Dec 2017), cryptography 2.0.3, Platform Windows-7-6.1.7601-SP1
+2018-03-13 16:39:06 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'finance', 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 1, 'LOG_FILE': 'scrapy.log', 'NEWSPIDER_MODULE': 'finance.spiders', 'SPIDER_MODULES': ['finance.spiders']}
+2018-03-13 16:39:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-13 16:39:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-13 16:39:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-13 16:39:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['finance.pipelines.FinancePipeline']
+2018-03-13 16:39:07 [scrapy.core.engine] INFO: Spider opened
+2018-03-13 16:39:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-13 16:39:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-13 16:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/> (referer: None)
+2018-03-13 16:39:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_hk_up> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:08 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/event/2018lh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/event/2018lh/
+2018-03-13 16:39:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#gn_ctgn> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:09 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/001113/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/corp/go.php/vII_NewestComponent/indexid/399006.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/001113/bc.shtml
+2018-03-13 16:39:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:10 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/corp/go.php/vII_NewestComponent/indexid/399006.phtml
+2018-03-13 16:39:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/i300/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/i300/
+2018-03-13 16:39:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:11 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:39:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#cyb_root> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:11 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/fund/jjyj/2017-01-09/doc-ifxzkfuh6143561.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/fund/jjyj/2017-01-09/doc-ifxzkfuh6143561.shtml
+2018-03-13 16:39:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#hs300> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:13 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:39:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/moneyflow/#sczjlx> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:13 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/moneyflow/
+2018-03-13 16:39:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/hs300.html#gz> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/hs300.html
+2018-03-13 16:39:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#stock_sz_tor> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/hs300.html#gxzs> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:15 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:39:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/hs300.html
+2018-03-13 16:39:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock> from <GET http://i.finance.sina.com.cn/zixuan,stock>
+2018-03-13 16:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:16 [finance_spider] DEBUG: no url ---http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock
+2018-03-13 16:39:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sz_amount> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:16 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/stock/thirdmarket/> from <GET http://otc.finance.sina.com.cn/>
+2018-03-13 16:39:16 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/17_ecoreward/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/17_ecoreward/
+2018-03-13 16:39:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/thirdmarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sz_down> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/thirdmarket/
+2018-03-13 16:39:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:18 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/2017_davos_xlzy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/2017_davos_xlzy/
+2018-03-13 16:39:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sz_up> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:19 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:39:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/meeting/showAllMeeting.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:19 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/meeting/showAllMeeting.php
+2018-03-13 16:39:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://finance.sina.com.cn/zt_d/xlyh/> from <GET http://finance.sina.com.cn/zt_d/xlyh>
+2018-03-13 16:39:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:20 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:39:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/jqlbx/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:20 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/jqlbx/
+2018-03-13 16:39:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:21 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:39:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingNewest/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:22 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingNewest/index.phtml
+2018-03-13 16:39:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/bank/banking2017/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:22 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/bank/banking2017/
+2018-03-13 16:39:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:23 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:39:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/mac/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/mac/
+2018-03-13 16:39:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/worldmac/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:25 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/worldmac/
+2018-03-13 16:39:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/data/#visual-wbyq> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:26 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/data/
+2018-03-13 16:39:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/calc/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/calc/
+2018-03-13 16:39:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:39:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://stock.finance.sina.com.cn/licai/view/vBankInfo.php?curBid=1&curPid=&curCid=> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:28 [finance_spider] DEBUG: no url ---http://stock.finance.sina.com.cn/licai/view/vBankInfo.php?curBid=1&curPid=&curCid=
+2018-03-13 16:39:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/
+2018-03-13 16:39:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://finance.sina.com.cn/fund/box/> from <GET http://stock.finance.sina.com.cn/box/view/index.php>
+2018-03-13 16:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/toppeople/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:30 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/toppeople/
+2018-03-13 16:39:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/box/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/box/
+2018-03-13 16:39:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:39:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/review/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/review/
+2018-03-13 16:39:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/xlyh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/xlyh/
+2018-03-13 16:39:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:39:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/consume/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/consume/
+2018-03-13 16:39:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:37 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:39:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/world/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:38 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/world/
+2018-03-13 16:39:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/china/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/china/
+2018-03-13 16:39:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/smjj/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:41 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/smjj/
+2018-03-13 16:39:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/quanshang/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:42 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/quanshang/
+2018-03-13 16:39:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/insurance/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:44 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/insurance/
+2018-03-13 16:39:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/bank/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:45 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/bank/
+2018-03-13 16:39:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/trust/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:46 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/trust/
+2018-03-13 16:39:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/creditcard/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:48 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/creditcard/
+2018-03-13 16:39:48 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/bond/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:49 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/bond/
+2018-03-13 16:39:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:50 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:39:50 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:51 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:39:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:52 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:39:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/longmen/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:53 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/longmen/
+2018-03-13 16:39:53 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/meeting/showAllMeeting.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:53 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/meeting/showAllMeeting.php
+2018-03-13 16:39:53 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:54 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/
+2018-03-13 16:39:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:56 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/
+2018-03-13 16:39:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/hkstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:57 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/hkstock/
+2018-03-13 16:39:57 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:58 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:39:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:39:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/986/2017/0318/17.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:39:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/986/2017/0318/17.html
+2018-03-13 16:39:59 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/17_ecoreward/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/17_ecoreward/
+2018-03-13 16:40:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/1hrw_9/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:02 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/1hrw_9/
+2018-03-13 16:40:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018dnh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:03 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018dnh/
+2018-03-13 16:40:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/1hrw_7/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/1hrw_7/
+2018-03-13 16:40:04 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:05 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:40:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/lingnanforum2018/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:07 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/lingnanforum2018/
+2018-03-13 16:40:07 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:07 [scrapy.extensions.logstats] INFO: Crawled 69 pages (at 69 pages/min), scraped 0 items (at 0 items/min)
+2018-03-13 16:40:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018ybljrfxlt/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018ybljrfxlt/
+2018-03-13 16:40:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018ybl_cef/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:09 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018ybl_cef/
+2018-03-13 16:40:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018_raydalio/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018_raydalio/
+2018-03-13 16:40:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/meeting/showAllMeeting.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:11 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/meeting/showAllMeeting.php
+2018-03-13 16:40:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/50rlt2018nh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/50rlt2018nh/
+2018-03-13 16:40:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/meeting/showAllMeeting.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:12 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/meeting/showAllMeeting.php
+2018-03-13 16:40:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjsp/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:12 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjsp/index.shtml
+2018-03-13 16:40:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:13 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:40:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjsp/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:13 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjsp/index.shtml
+2018-03-13 16:40:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/blog/blogarticle/cj-whzt/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:14 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/blog/blogarticle/cj-whzt/index.shtml
+2018-03-13 16:40:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:40:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://finance.sina.com.cn/zt_d/13jjyzjbj/> from <GET http://finance.sina.com.cn/zt_d/13jjyzjbj>
+2018-03-13 16:40:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/zzxjr018/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/zzxjr018/
+2018-03-13 16:40:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/zgzzlt/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/zgzzlt/
+2018-03-13 16:40:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018ybl_cef/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018ybl_cef/
+2018-03-13 16:40:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/jjzkdh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:20 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/jjzkdh/
+2018-03-13 16:40:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2017bjjbh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2017bjjbh/
+2018-03-13 16:40:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/renmindaxue/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/renmindaxue/
+2018-03-13 16:40:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/lingnanforum2018/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:24 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/lingnanforum2018/
+2018-03-13 16:40:24 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/dhjjdk47/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:25 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/dhjjdk47/
+2018-03-13 16:40:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018zhenghedaoxnjy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:26 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018zhenghedaoxnjy/
+2018-03-13 16:40:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018_raydalio/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018_raydalio/
+2018-03-13 16:40:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/50rlt2018nh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/50rlt2018nh/
+2018-03-13 16:40:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:30 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:40:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/management/2017-03-30/zl-ifycwyxr8796908.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/management/2017-03-30/zl-ifycwyxr8796908.shtml
+2018-03-13 16:40:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fawen/yx/2018-01-17/doc-ifyqtwzt9667619.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:33 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fawen/yx/2018-01-17/doc-ifyqtwzt9667619.shtml
+2018-03-13 16:40:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fawen/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fawen/
+2018-03-13 16:40:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/sjmkyl/index_1.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:34 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/sjmkyl/index_1.shtml
+2018-03-13 16:40:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/13jjyzjbj/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/13jjyzjbj/
+2018-03-13 16:40:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/sjmkyl/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:35 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/sjmkyl/index.shtml
+2018-03-13 16:40:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fawen/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fawen/
+2018-03-13 16:40:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/mingkan.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:37 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/mingkan.shtml
+2018-03-13 16:40:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-03-05/coverstory-ifxipenn0422548.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:39 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-03-05/coverstory-ifxipenn0422548.shtml
+2018-03-13 16:40:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-02-25/coverstory-ifyrvspi1668606.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-02-25/coverstory-ifyrvspi1668606.shtml
+2018-03-13 16:40:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-03-06/coverstory-ifxipenn7725492.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:41 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-03-06/coverstory-ifxipenn7725492.shtml
+2018-03-13 16:40:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-02-25/coverstory-ifyrwsqi0035990.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:42 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-02-25/coverstory-ifyrwsqi0035990.shtml
+2018-03-13 16:40:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-03-06/coverstory-ifxipenn7475118.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:43 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-03-06/coverstory-ifxipenn7475118.shtml
+2018-03-13 16:40:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/2018-03-12/coverstory-ifyscsmu6494598.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:45 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/2018-03-12/coverstory-ifyscsmu6494598.shtml
+2018-03-13 16:40:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:46 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/
+2018-03-13 16:40:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory/mingkan.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:47 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory/mingkan.shtml
+2018-03-13 16:40:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/c/2017-06-20/doc-ifyhfnqa4486697.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:49 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/c/2017-06-20/doc-ifyhfnqa4486697.shtml
+2018-03-13 16:40:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/c/2017-09-29/doc-ifymmiwm1215218.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:50 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/c/2017-09-29/doc-ifymmiwm1215218.shtml
+2018-03-13 16:40:50 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/c/2017-12-01/doc-ifyphxwa7375570.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:51 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/c/2017-12-01/doc-ifyphxwa7375570.shtml
+2018-03-13 16:40:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/c/2018-01-12/doc-ifyqnicm0440316.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:53 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/c/2018-01-12/doc-ifyqnicm0440316.shtml
+2018-03-13 16:40:53 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/coverstory.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:54 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/coverstory.shtml
+2018-03-13 16:40:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/rmbexchange.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:55 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/rmbexchange.html
+2018-03-13 16:40:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:56 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:40:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/future/2018-03-13/zl-ifyscsmv1161919.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:58 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/future/2018-03-13/zl-ifyscsmv1161919.shtml
+2018-03-13 16:40:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:40:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:40:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:40:59 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/002896/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=002896&country=fund>
+2018-03-13 16:41:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/
+2018-03-13 16:41:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/002896/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/002896/bc.shtml
+2018-03-13 16:41:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:02 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:41:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/003188/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=003188&country=fund>
+2018-03-13 16:41:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/003892/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=003892&country=fund>
+2018-03-13 16:41:03 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:41:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/bond/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/bond/
+2018-03-13 16:41:04 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/519225/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=519225&country=fund>
+2018-03-13 16:41:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:05 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:41:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/003188/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:06 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/003188/bc.shtml
+2018-03-13 16:41:06 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/rmb/2018-03-13/doc-ifyscsmv1298378.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:07 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/rmb/2018-03-13/doc-ifyscsmv1298378.shtml
+2018-03-13 16:41:07 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/money/forex/rmb/2018-03-13/doc-ifyscsmv1298378.shtml
+2018-03-13 16:41:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/money/forex/rmb/2018-03-13/doc-ifyscsmv1298378.shtml>
+{'content': '新浪财经讯 '
+            '3月13日，在岸官方收盘价报6.3294，较上一交易日官方收盘价跌58点，较上一交易日夜盘收盘跌14点。责任编辑：何凯玲 ',
+ 'resource': '新浪财经',
+ 'tag': ' 外汇',
+ 'time': '2018年03月13日 16:35',
+ 'title': '3月13日在岸人民币收报6.3294 跌58点',
+ 'url': 'http://finance.sina.com.cn/money/forex/rmb/2018-03-13/doc-ifyscsmv1298378.shtml'}
+2018-03-13 16:41:07 [scrapy.extensions.logstats] INFO: Crawled 125 pages (at 56 pages/min), scraped 1 items (at 1 items/min)
+2018-03-13 16:41:07 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/004528/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=004528&country=fund>
+2018-03-13 16:41:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:41:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/003892/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/003892/bc.shtml
+2018-03-13 16:41:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:09 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:41:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/001227/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=001227&country=fund>
+2018-03-13 16:41:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/
+2018-03-13 16:41:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/519225/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/519225/bc.shtml
+2018-03-13 16:41:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/
+2018-03-13 16:41:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/insurance/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/002538/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=002538&country=fund>
+2018-03-13 16:41:13 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/insurance/
+2018-03-13 16:41:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphzqx> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:13 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:41:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/insurance/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/insurance/
+2018-03-13 16:41:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:14 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/002045/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=002045&country=fund>
+2018-03-13 16:41:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphhhx> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:14 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:41:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/bank/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/bank/
+2018-03-13 16:41:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphgpx> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:15 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:41:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/002187/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=002187&country=fund>
+2018-03-13 16:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/bank/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/bank/
+2018-03-13 16:41:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjbk/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/004528/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:16 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjbk/index.shtml
+2018-03-13 16:41:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/004528/bc.shtml
+2018-03-13 16:41:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphall> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:17 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:41:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/
+2018-03-13 16:41:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjbk/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:17 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/blog/blogarticle/cj-jjbk/index.shtml
+2018-03-13 16:41:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/550016/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=550016&country=fund>
+2018-03-13 16:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/fund/jjsy/2018-03-13/doc-ifysfefc2519942.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/fund/jjsy/2018-03-13/doc-ifysfefc2519942.shtml
+2018-03-13 16:41:18 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/money/fund/jjsy/2018-03-13/doc-ifysfefc2519942.shtml
+2018-03-13 16:41:18 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/money/fund/jjsy/2018-03-13/doc-ifysfefc2519942.shtml>
+{'content': '创业板风生水起 '
+            '基金坚持“守正出奇”3月12日，创业板延续强势走势，盘中创业板指涨逾2%，指数突破1900点，创4个多月来的新高。创业板的出色表现，引发基金密切关注。事实上，进入3月份以来，公募基金明显加大了对创业板的配置力度，其风险偏好进一步提升。但中国证券报记者采访发现，目前，公募基金对创业板的机会多坚持“守正出奇”的策略，集中关注“创蓝筹”等确定性机会。近期，两市以创业板为代表的成长机会风生水起，成为A股市场一道亮丽的风景线。财汇大数据终端显示，截至3月12日，春节后创业板指已经大幅上涨14.31%，而同期上证综指和深证成指的表现明显落后。对于近期创业板的表现，券商、基金等机构多认为是新经济概念走强、创业板调整后上攻等因素叠加所致。不过，具体到投资节奏的把握上，公募相对“迟上桌”。记者从多位公募基金经理处了解到，多数基金在创业板上经历了试探性加仓到加大配置力度的过程，但是整体而言，节奏相对落后于市场走势，进入3月以来，部分基金开始明显加大对创业板的配置力度。“回顾来看，1月底至2月初，在市场经历较大幅度调整之际，A股砸出了两个‘坑’：一是持续上涨的蓝筹白马股出现调整，出现低位介入的机会；二是成长股继续下跌，调整加深，其底部似乎越来越近。彼时，可以选择较低位置继续加码蓝筹白马，或是在更低的位置加大对创业板个股的配置。但是，在当时市场情绪下，选择前者的多，而要做出后者这样的决策相当困难。”一位成长风格基金经理表示。这样的“风格依赖”影响的并不仅仅是几个基金经理或是几只基金产品。事实上，查询公募基金去年四季度的报告发现，以成长风格见长的基金经理在长期的“二八分化”行情下，多对创业板后期的机会相当谨慎，对创业板持“继续调整”、“结构性机会”等观点的基金经理大有人在。记者发现，“风格依赖”或许只是基金相对谨慎的原因之一。近期，虽然面对创业板不断攀升的涨势，不少公募基金仍坚持较为谨慎的“守正出奇”策略，在对创业板的配置上虽有所加大，但是仍旧坚持追逐“创蓝筹”等确定性机会，整体而言，公募“守正”优于“出奇”。“创业板机会的到来，仍需要在业绩的可持续性和商誉减值风险等方面让市场来检验。从2017年业绩预告来看，创业板权重个股拖累板块的态势明显，但是整体而言，创业板业绩有趋稳的态势。不过，今年一季度的业绩持续性仍有待验证。在商誉减值风险上，整体性风险不再，而个股性风险仍存，这一点也值得考虑。另外，将发展新经济、掘金‘独角兽’简单地映射到创业板上也并不可取。投资需要权衡多方面的因素，而不能轻易加大配置。”上海一家公募投研人士直言。另外，创业板持续上涨后可能的风险因素也正被机构所关注。例如，华宝基金就认为，短期来看，成长股的涨势也出现一些扩散，从一线龙头品种开始扩散到偏概念和主题的品种，短期行情上冲可能到了后半程，选股时需要注意业绩和估值的匹配程度。往后看，3月第四周（3月19日-25日）可能进入到流动性因素主导的一周，包括美联储的加息、一季度末的MPA考核等因素都可能带来资金价格的波动，从而对市场估值造成冲击。短期来看，华宝基金仍建议均衡配置。在这种机会夹杂疑虑的行情下，公募基金多坚持“守正出奇”的策略，以平衡风险和收益。在具体投资上，选择业绩确定性强、流通性好的“创蓝筹”个股正成为很多公募基金经理的选择。责任编辑：石秀珍 '
+            'SF183',
+ 'resource': '',
+ 'tag': ' 基金',
+ 'time': '2018年03月13日 03:24',
+ 'title': '创业板风生水起 基金坚持"守正出奇"集中投"创蓝筹"',
+ 'url': 'http://finance.sina.com.cn/money/fund/jjsy/2018-03-13/doc-ifysfefc2519942.shtml'}
+2018-03-13 16:41:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/moneyflow/#lxjlcg> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:18 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/moneyflow/
+2018-03-13 16:41:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/jj4/jjsy/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/moneyflow/#lxjlrg> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:19 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/jj4/jjsy/index.shtml
+2018-03-13 16:41:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:19 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/moneyflow/
+2018-03-13 16:41:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:19 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/001557/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=001557&country=fund>
+2018-03-13 16:41:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/smjj/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/smjj/
+2018-03-13 16:41:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/jj4/jjsy/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:20 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/jj4/jjsy/index.shtml
+2018-03-13 16:41:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123233/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:20 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/001556/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=001556&country=fund>
+2018-03-13 16:41:20 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123233/index.phtml
+2018-03-13 16:41:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/001227/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/smjj/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:21 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml
+2018-03-13 16:41:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:21 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/001227/bc.shtml
+2018-03-13 16:41:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:21 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/smjj/
+2018-03-13 16:41:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123243/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:21 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123243/index.phtml
+2018-03-13 16:41:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:22 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/zq1/gsjsy/index.shtml
+2018-03-13 16:41:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123257/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:22 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/519698/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=519698&country=fund>
+2018-03-13 16:41:22 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123257/index.phtml
+2018-03-13 16:41:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/jj4/index_1.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:23 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/jj4/index_1.shtml
+2018-03-13 16:41:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123259/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:24 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/150174/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=150174&country=fund>
+2018-03-13 16:41:24 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123259/index.phtml
+2018-03-13 16:41:24 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/jj4/index_1.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:25 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/jj4/index_1.shtml
+2018-03-13 16:41:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123261/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:25 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://finance.sina.com.cn/fund/quotes/000697/bc.shtml> from <GET http://biz.finance.sina.com.cn/suggest/lookup_n.php?q=000697&country=fund>
+2018-03-13 16:41:25 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123261/index.phtml
+2018-03-13 16:41:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/002538/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:26 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/002538/bc.shtml
+2018-03-13 16:41:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123263/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:26 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123263/index.phtml
+2018-03-13 16:41:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/column/ggdp.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/column/ggdp.shtml
+2018-03-13 16:41:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/002045/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/002045/bc.shtml
+2018-03-13 16:41:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123265/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:28 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123265/index.phtml
+2018-03-13 16:41:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/column/ggdp.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/column/ggdp.shtml
+2018-03-13 16:41:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/002187/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/002187/bc.shtml
+2018-03-13 16:41:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123267/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:29 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123267/index.phtml
+2018-03-13 16:41:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/1378170044/30907> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:29 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/1378170044/30907
+2018-03-13 16:41:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/
+2018-03-13 16:41:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/550016/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:30 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/550016/bc.shtml
+2018-03-13 16:41:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123271/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:30 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123271/index.phtml
+2018-03-13 16:41:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/1661504227/30888> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:30 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/1661504227/30888
+2018-03-13 16:41:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:41:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/001557/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/001557/bc.shtml
+2018-03-13 16:41:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123275/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:31 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123275/index.phtml
+2018-03-13 16:41:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/5123677729/30932> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/dav/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:32 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/5123677729/30932
+2018-03-13 16:41:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/dav/
+2018-03-13 16:41:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515062.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:32 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515062.html
+2018-03-13 16:41:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123277/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/001556/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:32 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_Show/kind/lastest/rptid/4123277/index.phtml
+2018-03-13 16:41:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/001556/bc.shtml
+2018-03-13 16:41:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/dav/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/6195830315/30906> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515228.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:33 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/dav/
+2018-03-13 16:41:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:33 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/6195830315/30906
+2018-03-13 16:41:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:33 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515228.html
+2018-03-13 16:41:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_List/kind/company/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/519698/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:34 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_List/kind/company/index.phtml
+2018-03-13 16:41:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/519698/bc.shtml
+2018-03-13 16:41:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/1658605145/30915> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:34 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/1658605145/30915
+2018-03-13 16:41:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/app/pcDownloadV.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/app/pcDownloadV.shtml
+2018-03-13 16:41:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515811.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vReport_List/kind/company/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/150174/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:35 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515811.html
+2018-03-13 16:41:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:35 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vReport_List/kind/company/index.phtml
+2018-03-13 16:41:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/150174/bc.shtml
+2018-03-13 16:41:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/dav/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/dav/
+2018-03-13 16:41:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/bozhu/1789788500/30934> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:35 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/bozhu/1789788500/30934
+2018-03-13 16:41:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516011.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:36 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516011.html
+2018-03-13 16:41:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/quotes/000697/bc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/quotes/000697/bc.shtml
+2018-03-13 16:41:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/mobile/comfinanceweb.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/mobile/comfinanceweb.shtml
+2018-03-13 16:41:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516963.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:37 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516963.html
+2018-03-13 16:41:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:38 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:41:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_517252.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:38 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_517252.html
+2018-03-13 16:41:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:39 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:41:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515062.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:40 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515062.html
+2018-03-13 16:41:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/china/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:41 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/china/
+2018-03-13 16:41:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515062.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:41 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515062.html
+2018-03-13 16:41:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/china/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:42 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/china/
+2018-03-13 16:41:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515228.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:42 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515228.html
+2018-03-13 16:41:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/consume/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:43 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/consume/
+2018-03-13 16:41:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515228.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:44 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515228.html
+2018-03-13 16:41:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/consume/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:44 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/consume/
+2018-03-13 16:41:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515811.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:45 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515811.html
+2018-03-13 16:41:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:46 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:41:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_515811.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:46 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_515811.html
+2018-03-13 16:41:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:47 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:41:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516011.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:47 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516011.html
+2018-03-13 16:41:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/c/2018-03-13/doc-ifyscsmv1136413.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:48 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/c/2018-03-13/doc-ifyscsmv1136413.shtml
+2018-03-13 16:41:48 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/usstock/c/2018-03-13/doc-ifyscsmv1136413.shtml
+2018-03-13 16:41:48 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/usstock/c/2018-03-13/doc-ifyscsmv1136413.shtml>
+{'content': '新浪美股 北京时间13日下午消息 位于伦敦的品牌价值咨询公司Brand '
+            'Finance公布了2018最有价值的300个中国品牌。在排名中成为中国最有价值的互联网品牌，该机构认为，阿里巴巴的品牌价值近3500亿（549亿美元）。阿里巴巴所代表的中国互联网科技行业，正在蓄力超越金融行业的品牌价值。该报告还显示，中国的多个行业已经开始展现出全球品牌领导的气势，许多国内流行的热门品牌开始在全球范围内被认定为优质品牌。报告认为，阿里巴巴作为世界增长最快的大型零售品牌，在2017年没有展现出任何增长放缓的迹象。随着阿里巴巴投资千亿人民币为其全球物流网络扩张，阿里的增速还将加快。阿里巴巴在新零售领域、物流、基础科研领域的投资得到了市场的认可，反映在该排行榜中，中国公司的品牌价值平均增速为24.4%，而阿里巴巴的品牌价值同比增长则高达58%，是中国品牌价值平均增速的两倍。同时，阿里巴巴集团也在2017年在品牌方面做出了多方面的尝试。在2017年的天猫双11晚会上，除了规格堪比春晚的国内外巨星云集上海梅赛德斯中心，阿里巴巴还尝试了把真人三维建模和动作捕捉技术运用到了手机平台，巧妙地将AR技术与VR全景技术结合，实现了将明星们投射到观众身边的“零距离”接触效果。阿里巴巴集团成为奥委会顶级赞助商，向整个奥林匹克运动提供资金、产品、服务、技术和人力资源支持，更是让世界熟悉了阿里巴巴的品牌。在2月份韩国平昌冬奥会期间，阿里巴巴科技馆正式开馆。阿里巴巴董事局主席马云、国际奥林匹克委员会主席巴赫双双到场，开馆仪式还吸引了平昌市市长和姚明等人到场。阿里巴巴首席市场官董本洪在此前接受采访时表示，“这是公司首次推出全球品牌推广活动，这将有助于我们向中国以外的观众介绍的阿里的品牌。”他补充说，这些是重要的战略重要市场。Brand '
+            'Finance的CEO David '
+            'Haigh表示，“今年大型中国品牌增长强劲。中国经济独特的现代历史在国内产生了大型民族品牌。未来几年，中国品牌有机会利用这一强大的国内基础作为全球扩张的平台。”责任编辑：张玉洁 '
+            'SF107',
+ 'resource': '新浪财经',
+ 'tag': '美股',
+ 'time': '2018年03月13日 15:59',
+ 'title': '英品牌评级机构:阿里巴巴成中国最有价值互联网品牌',
+ 'url': 'http://finance.sina.com.cn/stock/usstock/c/2018-03-13/doc-ifyscsmv1136413.shtml'}
+2018-03-13 16:41:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516011.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:49 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516011.html
+2018-03-13 16:41:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/meeting/showAllMeeting.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:49 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/meeting/showAllMeeting.php
+2018-03-13 16:41:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/world/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:49 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/world/
+2018-03-13 16:41:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516963.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:50 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516963.html
+2018-03-13 16:41:50 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/world/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:51 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/world/
+2018-03-13 16:41:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_516963.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:51 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_516963.html
+2018-03-13 16:41:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/china/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:52 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/china/
+2018-03-13 16:41:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_517252.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:52 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_517252.html
+2018-03-13 16:41:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qsapppx/2015/2327.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:53 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qsapppx/2015/2327.html
+2018-03-13 16:41:53 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/slide_9_86514_517252.html#p=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:54 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/slide_9_86514_517252.html
+2018-03-13 16:41:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/times/44.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:54 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/times/44.html
+2018-03-13 16:41:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:55 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/
+2018-03-13 16:41:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/sinachanganforum/2015_140.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:55 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/sinachanganforum/2015_140.shtml
+2018-03-13 16:41:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/lczx/2016-03-15/1435/242.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:57 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/lczx/2016-03-15/1435/242.html
+2018-03-13 16:41:57 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/c/t/20160318/1647168.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:58 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/c/t/20160318/1647168.shtml
+2018-03-13 16:41:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:41:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/sinachanganforum/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:41:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/sinachanganforum/
+2018-03-13 16:41:59 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018ybl_cef/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018ybl_cef/
+2018-03-13 16:42:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:02 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:42:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/consume/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:03 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/consume/
+2018-03-13 16:42:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/baoguangtai/view/user-ts.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:03 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/baoguangtai/view/user-ts.php
+2018-03-13 16:42:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifyscsmv1234452.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifyscsmv1234452.shtml
+2018-03-13 16:42:04 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifyscsmv1234452.shtml
+2018-03-13 16:42:04 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifyscsmv1234452.shtml>
+{'content': '文|《中国企业家》记者焦丽莎阿里在ofo的话语权再次加强。今天早间，ofo宣布完成E2-1轮融资8.66亿美元。由阿里巴巴领投，灏峰集团、天合资本、蚂蚁金服与君理资本共同跟投。一位接近ofo的人士透露，ofo拿到的E2轮融资金额应该不止这些，由于部分资金尚未到位，所以先宣布了E2-1轮融资，E2-2将于近期宣布。该消息未得到ofo官方确认。这是一笔股权加债权并行的融资，这样的融资结构在互联网公司中并不多见。一位ofo内部人士向《中国企业家》透露，该轮融资中包含此前ofo以动产抵押的方式换取阿里的17.7亿元借款。他没有进一步透露，股权和债权融资的具体占比。考虑到当前ofo的现状和阿里的态度，以及双方都没有对外公布ofo的最新估值，很可能债权的占比大于股权。互联网公司中，股权融资比较常见。债权融资和股权融资的最大区别是，前者有固定期限，且通常时间较短。企业必须支付利息，到期时须偿还本金。一旦公司发生巨大风险，先还债，后还股。通常情况下，当投资人对企业未知风险存在疑虑时，会要求使用多重手段保障自身权益。此前某阿里关联公司融资时，投资人要求阿里给予担保，同时承诺一定的投资回报比例，最终才敲定融资。而从融资发布后的细节来看，ofo很快将大力进行商业化尝试，资本市场急于看到健康的盈利模式。值得关注的是，除了阿里和蚂蚁金服，灏峰集团、天合资本和君理资本三家跟投机构的背景信息很难捕捉。《中国企业家》辗转联系多位投资人，并且通过相关软件进行查询，都未获得三家机构的详细信息。包括三家投资机构与阿里的关系，尚未可知。虽然，阿里进入ofo的脚步依然踟蹰，但是野心不容怀疑。在单车市场，阿里和腾讯开始正面对峙。阿里进一步投资ofo，并非一蹴而就，是经过一系列博弈的结果。此前，一位蚂蚁金服的匿名人士曾告诉《中国企业家》，“对阿里来说，这个钱还是出得起的。阿里接盘，关键是ofo想拉阿里进来，只是滴滴得同意，那就得谈条件，得谈以什么样的价格来收，收了以后覆盖的权益是什么。”阿里对单车有一套自己的逻辑，他们认为这个行业目前最大的问题是，一，无限量、不加控制地扩张；二，大量押金产生的风险和隐患巨大。上述人士称，“ofo要得到阿里的资金，必须免押金，有计划、有控制的对现在的运营计划做调整，改变粗放的模式。”就在今天下午，阿里旗下另一股单车势力Hellobike宣布在全国实行免押金政策。阿里对单车的野望正在逐步变成现实。2017年12月初，ofo早期投资人朱啸虎在退出协议签字。以30亿美金估值，朱啸虎将ofo的股份出售给阿里巴巴和滴滴。阿里拿了大部分额度，包括朱啸虎手中的董事会席位和一票否决权，滴滴只拿了一小部分额度。接手朱啸虎的股份后，阿里在ofo持股比例在10%左右。新的融资带来的变化不得而知。在此之前，“戴威的计划是，给阿里2亿美金额度，剩余分别给软银和滴滴。”按照一位ofo投资人的说法，阿里的2亿美金去年已经到账，但是ofo和滴滴关系恶化后，滴滴和软银的融资很可能夭折。他还透露，阿里在ofo的股份并不高，当时阿里希望吃下全部额度，同时要求拿掉戴威的一票否决权，稀释滴滴的股份。有匿名人士称，当时ofo希望引入阿里的融资拿掉滴滴的控制权，把滴滴变成纯财务投资人，董事会席位保留一个。滴滴内部人士的说法是，对于阿里投资ofo，滴滴乐见其成，并且会和阿里在动作上保持一致。据投资人透露，金沙江退出ofo后，在ofo董事会中，管理团队有五个席位（戴威行使全部投票权），滴滴两席，阿里一席，经纬一席。其中，戴威、滴滴、阿里、经纬都拥有一票否决权。此轮阿里进一步投资，该格局或许已经出现变化。但局面不容乐观。“滴滴控制ofo的同时，还自己做单车，他不会选择退出。”匿名人士说，腾讯是滴滴的大股东，阿里通过投资控制ofo也是他不愿看到的结果。这是一场巨大的流量之争，背后是腾讯阿里之间的博弈。多位投资人曾向《中国企业家》表达，此前摩拜和ofo两家公司合并之所以艰难，很大程度上在于腾讯和阿里在其中的战略诉求不太一样。“一个业务对于A和T同时具备战略价值的不多，（单车）的战略价值很大。”一位投资人说。朱啸虎曾算过一笔账，“共享单车市场对标的是公交车，在中国，每天的公交车出行是3.5亿次，现在两家共享单车每天的骑行数据加在一起是5000万次。三年后，共享单车每天至少是1亿~2亿次的骑行，这是很有可能的。全球来看，没有一个交易平台每天能有这样的交易量。”2016年10月腾讯领投摩拜单车，如今是摩拜最大机构股东；2017年3月蚂蚁金服领投，战略投资ofo，7月阿里巴巴投资ofo，10月永安行低碳跟哈罗单车合并，蚂蚁金服投资并成为哈罗单车第一大股东。阴差阳错，出现了现在的股东格局。2016年5月，ofo启动B轮融资后，戴威就和腾讯有过接触，但错过了一个周末。“腾讯要在星期一开完例会来跟ofo谈投资，但是前一个周四的晚上，肖敏（经纬中国合伙人）和戴威在经纬中国的办公室提前把协议签了。”朱啸虎说，如果再过一个周末，整个故事就变了。“当时和肖敏聊得比较投缘，想法也很一致。”戴威回忆，和阿里敲定融资也很快，只用了两周时间。按照朱啸虎的说法，腾讯对摩拜的支持力度很大，阿里肯定也要投资一家。摩拜投资人称，阿里想要投资ofo的原因有两个，一是支付宝的线下渗透率不如微信支付，要提升使用频次就必须丰富高频使用场景。用户用支付宝扫码骑车，就是极大的场景补充。其次就是芝麻信用，微信也在建立信用体系。线下支付场景和信用体系建设，是阿里和腾讯共同的战略诉求。还有投资人分析，对腾讯而言，小程序也是很大的一个战略价值。2017年下半年，马云和马化腾曾公开喊话。乌镇互联网大会期间，马云对媒体表示，“我们做任何的兼并、合作都要思考对行业的贡献，不能为了垄断、为了早点收钱而做。”在哈罗单车获得蚂蚁金服投资后，马化腾则在朋友圈留言，“被当做支付的推广工具了，可怜了其余小股东被锁死。”这个观点得到了部分投资人认同。有投资人担心，阿里会把哈罗单车当做炮台，就像现在的饿了么。如果ofo拿了阿里的融资，戴威很可能就是下一个张旭豪（饿了么CEO）。对于阿里来说，他不愿意也不会让此前滴滴快的合并后，腾讯掌控话语权的局面再次出现。但是，对于投资人口中的“戴威是一个内心住着猛虎，外表柔和的人”，会甘心屈服吗？责任编辑：孙剑嵩 ',
+ 'resource': '中国企业家杂志',
+ 'tag': ' 产经',
+ 'time': '2018年03月13日 16:19',
+ 'title': '阿里腾讯在单车市场正面对峙 ofo会是下一个饿了么？',
+ 'url': 'http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifyscsmv1234452.shtml'}
+2018-03-13 16:42:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifysfhpi6765959.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:06 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifysfhpi6765959.shtml
+2018-03-13 16:42:06 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifysfhpi6765959.shtml
+2018-03-13 16:42:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifysfhpi6765959.shtml>
+{'content': '傅林林海航大英山地块部分项目的出售终于尘埃落定，融创成为继富力之后又一家接盘房企。3月12日，发布公告，孙公司海航地产与与海南融创昌晟置业有限公司签订股权转让协议，拟将所持有的海南高和房地产100%的股权、海南海岛物流100%的股权转让转让与海南融创昌晟，转让价款分别为约11.36亿元、7.97亿元。这次地产项目转让，将为海航带来约19.33亿元的现金流。2个月前，界面新闻曾独家报道，海航希望出售部分地产资源，其中的一块土地为海口大英山国际旅游岛CBD中的一部分，预计成交规模为20亿元。此前已有消息人士向界面新闻表示，富力和融创将成为最终的买家，不过当时交易价格还未敲定。融创接手这两家公司，看中的或许正是大英山区域的土地价值，2016年7月，这两家公司就曾组成联合体并以8.15亿元拍下了位于海口红城湖棚改片区范围内的2宗地块，总面积为5.04万平米，创造了当时海口的单价地王记录，而这幅地块也位于大英山区域。公告似乎也印证了这一点，海岛物流的总资产为6.08亿元，负债仅有9920万，而且这家公司2017年没有营业收入，2018年1月份的营业收入则仅有500元。另一家收购标的海南高和开发了望海国际广场，总用地面积2.5347公顷，总建筑面积约15.5万平方米，2018年1月的营业收入为1310万元，已经占2017年全年营业收入的三分之一，净资产7.07亿元。进入2018年，融创已经进行了多笔投资，这其中也有像95亿元投资万达商业的大单，而此次接手海航资产规模并不算大，在海南正遭遇史上最严围填海管控与最严土地政策之时，适时的土地储备的补充，在未来市场上的价值不言而喻。融创相关人士也对此表示，只是单一的地方项目的交易，和海航整体没有其他合作。另外，根据公告显示，海航出售海岛物流交易完成后公司预计将增加投资收益2.87亿元及净利润2.15亿元，出售高和房地产交易完成后预计将增加投资收益 '
+            '2.96 亿元及净利润 2.22 '
+            '亿元。对于深陷债务危机的海航来说，地产资源将是其偿债的最大来源。就在几天前，海航将其位于香港的启德地块中的第三幅出售给香港地产商会德丰，而仅剩的第四幅地块也被多家港企看中。除此之外，海航近期处置的地产资产还包括澳大利亚悉尼的One '
+            'York写字楼项目、位于纽约曼哈顿第六大道的1180 Avenue of '
+            'Americas等。国内市场上，除了大英山板块的土地外，作为海南的“大地主”，截至2017年底，海航地产拥有房地产项目逾百个，可运营面积约220万平方米；在建项目40余个，总建筑面积近450万平方米；总可售面积逾117万平方米，其中大部分位于海南省内。同时，海航也有着数量众多的国内物业正等待出售，包括在海口、上海、北京、苏州、长春等地的物业。根据媒体报道，在一份海航的酒店及物业资产包中，北京唐拉雅秀酒店、海口海航国际广场、三亚皇冠假日酒店、三亚喜来登酒店以及尚未完工或开业的广州中央海航酒店广场、云南海航广场项目、苏州饭店项目都在可转让名单，评估价分别为20亿-60亿元。而在海外，根据彭博社的一项统计称，海航目前已经出售和正在出售的海外资产超过90亿美元（约合571亿元人民币）。近期，海航已经处置了近400亿人民币的资产。但处置这些资产，对背负巨额债务的海航集团来说还远远不够。截止今年上半年，海航集团的利息支出达到创纪录的156亿元，同比增长超过一倍；其短期债务达到1852亿元，远超其现金储备。未来几个月，海航依然要面临如何回笼资金并偿还债务的巨大危机。责任编辑：郭一晨 '
+            'SF160',
+ 'resource': '',
+ 'tag': ' 产经',
+ 'time': '2018年03月13日 08:14',
+ 'title': '海航债务缠身开售国内土地 融创19亿接盘',
+ 'url': 'http://finance.sina.com.cn/chanjing/gsnews/2018-03-13/doc-ifysfhpi6765959.shtml'}
+2018-03-13 16:42:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:07 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:42:07 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:07 [scrapy.extensions.logstats] INFO: Crawled 237 pages (at 112 pages/min), scraped 5 items (at 4 items/min)
+2018-03-13 16:42:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/survey_2017_vote_16/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/survey_2017_vote_16/
+2018-03-13 16:42:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/315_2018/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/315_2018/
+2018-03-13 16:42:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/other/job/2017-04-25/doc-ifyepsec0980989.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/other/job/2017-04-25/doc-ifyepsec0980989.shtml
+2018-03-13 16:42:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/other/job/2017-04-26/doc-ifyetwsm0452359.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/other/job/2017-04-26/doc-ifyetwsm0452359.shtml
+2018-03-13 16:42:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/other/job/2017-06-16/doc-ifyhfnqa4345271.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:13 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/other/job/2017-06-16/doc-ifyhfnqa4345271.shtml
+2018-03-13 16:42:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/chanjing/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/chanjing/
+2018-03-13 16:42:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/topnews/#1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/topnews/
+2018-03-13 16:42:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/topnews/#4> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/topnews/
+2018-03-13 16:42:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/topnews/#3> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/topnews/
+2018-03-13 16:42:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/topnews/#2> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/topnews/
+2018-03-13 16:42:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/topnews/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:20 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/topnews/
+2018-03-13 16:42:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/jinrong315/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:22 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/jinrong315/
+2018-03-13 16:42:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/
+2018-03-13 16:42:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/focus/2018-03-09/doc-ifxpwyhw3980387.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:24 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/focus/2018-03-09/doc-ifxpwyhw3980387.shtml
+2018-03-13 16:42:24 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/focus/2018-03-09/doc-ifxpwyhw3980387.shtml
+2018-03-13 16:42:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/focus/2018-03-09/doc-ifxpwyhw3980387.shtml>
+{'content': '新浪财经讯 3月9日消息，2017年营收同比增逾2倍，净利增近9成。数据显示，系其大手笔收购的Teenie '
+            'Weenie品牌并表，当期贡献了大部分利润。但在亮眼的数据背后，也暴露出高溢价收购背后的种种问题，无形资产和商誉暴增、资产负债率高…3月8日晚间，维格娜丝披露2017年年报，报告期内，公司实现营业收入25.64亿元，同比增长244.50%；实现归属于上市公司股东的净利润1.90亿元，同比增长89.32%。梳理发现，维格娜丝主要业务为服装设计、生产及销售。公司自2014年12月上市之后，业绩表现并不理想。在2015-2016年，公司的营收和净利连续两年发生下滑。随后，公司开始推行多品牌经营，收购云锦之后，在2016年9月，公司又宣布以约57亿元现金收购衣恋时装香港有限公司持有的Teenie '
+            'Weenie品牌及该品牌相关的资产和业务。从而形成了目前的三大主营品牌：“VGRASS”、 “吉祥云锦”及“TEENIE '
+            'WEENIE”。年报显示，公司上市以来的主打品牌“VGRASS”表现平平，毛利率同比有所下降。此前收购的云锦品牌，营业收入同比下降19.80%，而Teenie '
+            'Weenie品牌贡献了17.44亿元的营收，占总营收的比例约为68%。在资产方面，因收购TEENIE '
+            'WEENIE导致维格娜丝的无形资产和商誉均出现了巨幅增长。2017年底，公司的无形资产为15.26亿元，同比增长5322.91%，占总资产的比例为23.06%。同期商誉为25.26亿元，同比增长7774.73%，占总资产的比例为38.18%。而2017年末，归属于上市公司股东的净资产为16.41亿元。也就是说，一旦出现商誉减值，将对公司造成不小的影响。而在负债端，因收购TEENIE '
+            'WEENIE，2017年末，维格娜丝应付利息同比增长18888.37%，其他应付款同比增长5552.79%。2017年末，维格娜丝的总资产为66.17亿元，负债为47.62亿元，资产负债率高达71.97%。（作者 '
+            '曹婕）责任编辑：曹婕 ',
+ 'resource': '新浪财经',
+ 'tag': '',
+ 'time': '2018年03月09日 17:23',
+ 'title': '维格娜丝业绩"带刺":巨额商誉压顶 资产负债率超70%',
+ 'url': 'http://finance.sina.com.cn/stock/focus/2018-03-09/doc-ifxpwyhw3980387.shtml'}
+2018-03-13 16:42:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/roll/index.d.html?cid=221431&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:25 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/roll/index.d.html?cid=221431&page=1
+2018-03-13 16:42:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/2018_raydalio/#254551828> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/2018_raydalio/
+2018-03-13 16:42:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/event/2018lh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/event/2018lh/
+2018-03-13 16:42:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/bmdzg/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/bmdzg/
+2018-03-13 16:42:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/315_2018/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/315_2018/
+2018-03-13 16:42:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/ddhh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/ddhh/
+2018-03-13 16:42:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt/
+2018-03-13 16:42:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifyscsmu9320936.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:33 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifyscsmu9320936.shtml
+2018-03-13 16:42:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifysfkau8222225.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifysfkau8222225.shtml
+2018-03-13 16:42:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/insurance/2018-03-13/zl-ifyscsmv0836752.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/insurance/2018-03-13/zl-ifyscsmv0836752.shtml
+2018-03-13 16:42:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/bank/2018-03-13/zl-ifyscsmv0985954.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/bank/2018-03-13/zl-ifyscsmv0985954.shtml
+2018-03-13 16:42:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/future/2018-03-13/zl-ifyscsmv1161919.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:37 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/future/2018-03-13/zl-ifyscsmv1161919.shtml
+2018-03-13 16:42:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifyscsmu9348872.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:38 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/china/2018-03-13/zl-ifyscsmu9348872.shtml
+2018-03-13 16:42:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:42:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:42:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/zq1/ssgs/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:40 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/zq1/ssgs/index.shtml
+2018-03-13 16:42:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:42 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:42:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/lifestyle/2018-03-13/zl-ifyscsmu9309374.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:43 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/lifestyle/2018-03-13/zl-ifyscsmu9309374.shtml
+2018-03-13 16:42:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:44 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:42:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:46 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:42:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://wq.finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:46 [finance_spider] DEBUG: no url ---http://wq.finance.sina.com.cn/
+2018-03-13 16:42:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:47 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/
+2018-03-13 16:42:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:47 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/
+2018-03-13 16:42:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/hkstock/hkstocknews/2018-03-13/doc-ifyscsmv1282869.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:49 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/hkstock/hkstocknews/2018-03-13/doc-ifyscsmv1282869.shtml
+2018-03-13 16:42:49 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/hkstock/hkstocknews/2018-03-13/doc-ifyscsmv1282869.shtml
+2018-03-13 16:42:49 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/hkstock/hkstocknews/2018-03-13/doc-ifyscsmv1282869.shtml>
+{'content': '花旗将腾讯控股（00700）目标价由482元调高至538元，评级维持“买入”。花旗表示，新目标价538元基于2019年非通用会计准则预测，每股盈利预测由13.78元人民币升至14.16元人民币，预测市盈率由35倍提高至38倍。花旗称，38倍预测市盈率历史平均市盈率27倍高2标准差，相对盈利增长比率为1.06倍，2016至2019年间预测盈利复合年増长率为36%。花旗认为，有关预测反映腾讯大型投资组合溢价，目前盈利未反映所有上行因素。腾讯控股现价462.8元。大摩发表研究报告，称恒生银行（00011）过去五年均属好的投资，除了贷款增长强劲，净息差也有改善，加上资产质素强劲，普通股权一级资本比率（CET1）约16%，存贷比约七成，流动性覆盖比率逾200%。尽管CET1比率较高加上低息环境，恒生过去五年回报年复合增长率均达15%。该行将恒生目标价由220元上调至240元，维持“增持”评级。恒生银行现价191.2元。大摩称，恒生希望派息可稳定增长，而其每股盈利也增长显着，预期未来三年每股派息，将跟随每股盈利势头增约10%。该行称，恒生资产负债表属亚洲银行中最强之一，其盈利改善周期预计可持续。美银美林发表研究报告，称农行（01288）有意配售A股，筹集不多于1000亿人民币的资金，成为第一间国有银行配售股份以取得融资，当中包括汇金及财政部等认购，对股份有刺激作用，因降低短期内公司有再配售的需求、小股东无须参与、有政府机构参与，对股价有正面影响。不过，对银行同业影响较复杂，可能会触发另一轮银行资本重组，一些更可能无可避免地需要于二级市场筹集资金。“有关的配售价相等于过去20日A股的均价，而2017年每股资产净值为4.15元人民币，同时估计可带动2018年核心一级资本比率提升80点子，较中行（03988）及交行（03328）为高，同时汇金及财政部维持其持股量不变”，该行称。每股盈利及股本回报将被摊薄8%，美银美林维持农行其“买入”评级，目标价为4.28元。现价4.71元。大和总研发表研究报告称，（00316）去年度业绩逊预期，但管理层对今年行业复苏维持乐观。该行相信与（01919）的收购交易为低风险的机会。该行重申“优于大市”评级及目标价78元。东方海外国际现价为73元。另外，管理层预计今年跨太平洋及亚洲至欧洲的货量将会取得高单位数至低双位数增长。同时，管理层预计亚洲航线货量今年取得较大的增长，去年则为持平。该行相信获中远海控提购的交易很可能在6月底前完成，因内地政府大力推动行业整合，冀以一家大型综合货运公司与海外竞争。野村发表研究报告称，会德丰（00020）的全年业绩令该行感到鼓舞，认为其估值吸引，重申对会德丰的正面看法。野村于报告提到，会德丰的盈利可见度有所改善，现时估值也较便宜。该行预测，会德丰香港物业发展的毛利率将会有进一步改善，在年初至今的强劲楼花销售及新盘推出下，未来数年毛利率有望回升至逾20%。野村又相信，会德丰的三个主要分部业务前景正有所改善，集团专注于将军澳及启德区取得土储的急速发展策略所产生的协同效应，加上强劲的平均售价将令公司的发展毛利率回升。该行将集团2018至2019财年的每股盈利预测分别下调3%及2%，反映对（00004）及（01997）的最新表现预测及项目完成进度。野村重申予会德丰“买入”评级，目标价维持73元。会德丰现价60.8元。汇丰证劵发表研究报告称，龙源电力（00916）公布2017年业绩，纯利同比上升8%至38.46亿元人民币，撇除一次性项目，经常性盈利同比上升11%，合符预期。每股分派同比上升8%至0.092元，反映派息比率为20%。汇证表示龙源电力的估值吸引，维持予其“买入”评级，但目标价由7.6元下降至7.3元，反映该行调整对煤电业务及利用小时的最新预测。龙源电力现价5.56元。交银国际重申买入绿叶制药（02186），提高目标价由7.2元升至 '
+            '8.5元。文银国际称，维持对该股2017-19年预测不变，认为绿叶制药的净利润于2017年上半年下滑9%，下半年则重拾增长，因上半年主要受两个暂时性因素影响：主要产品力朴素因为分销商去库存而延迟发货，及并购产生一次性费用。若扣除2017年下半年上述两个因素，利润应回复至正常高双位数增长。2017年业绩将符合预期，约赚9.26亿人民币。报告认为，最近该公司研发项目取得较大进展：中美同时豁免罗替戈汀二期临床；立培酮在美国豁免儿童试验，一类新药安舒法辛中国二期临床取得较理想临床资料。该公司的在研管线价值被低估，预计研发进度加快。绿叶制药现价6.9元。野村发表研究报告，重申金风科技（02208）“买入”评级，升今明两年每股盈利预期9%及4%，主因降低收入税预期，升目标价15%，由13.66元上调至15.76元，为今年预测市盈率10.6倍，估值较同业平均水平14.4倍更吸引。“公司公布的初步业绩显示，去年纯利较该行预期低6%，主因公司就风电叶片向间接附属提出索偿并取得一次性拨备，公司正寻求供应商负责，预期会在今年取得非经营收入2.12亿人民币”，野村称。金风科技现价13.4元。德银研究报告称，北京汽车（01958）旗下自家品牌重组，与现代的合营业务复苏，及北京奔驰的持续贡献，预计将带动公司今年业绩较去年大为改善；但又称并未立即看到好转，与现代合营及自家品牌销售仍弱，预计上半年业绩仍然失色。该行认为可趁短期较令人失望的消息作为增持股份的机会，并将目标价由11.5元上调至14.3元，评级“买入”。北京汽车现价10.86元。美银美林发表研究报告，称润泥（01313）认为年初至今需求延续去年第四季强势，预计首季出货量与去年第一季相比最少持平，甚至可取得同比增长。此外，今年首两个月公司平均售价达每吨386.9元，管理层预测3月定价将继续强势。“虽然今年首两个月煤价成本约每吨820至830元，高于2017年全年的707元，但仍预期第一季每吨毛利可达145元，去年同期为87元，去年第四季为112元”，该行称。管理层认为由于广东及广西物业市场平稳，预计南方需求同比增长2-3%，并预期3至4月需求持续复苏。该行将公司2018至2019年每股盈利预测上调18-29%，目标价由6.5元升至7.5元，重申“买入”评级。华润水泥现价6.23元。责任编辑：白仲平 ',
+ 'resource': '新浪港股',
+ 'tag': ' 港股',
+ 'time': '2018年03月13日 16:17',
+ 'title': '最被看好十大港股：花旗上调腾讯控股目标价至538元',
+ 'url': 'http://finance.sina.com.cn/stock/hkstock/hkstocknews/2018-03-13/doc-ifyscsmv1282869.shtml'}
+2018-03-13 16:42:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/hkstock/marketalerts/2018-03-13/doc-ifyscsmv1206616.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:50 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/hkstock/marketalerts/2018-03-13/doc-ifyscsmv1206616.shtml
+2018-03-13 16:42:50 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/hkstock/marketalerts/2018-03-13/doc-ifyscsmv1206616.shtml
+2018-03-13 16:42:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/hkstock/marketalerts/2018-03-13/doc-ifyscsmv1206616.shtml>
+{'content': '新浪港股讯 '
+            '3月13日消息，周一美股收市个别发展，黄金、原油收跌，美汇指数跌破90关口，港股ADR指数微承压。今日早盘，恒指低开，此后内银股发力，恒指一度翻红，此后再度走低，午后尾盘拉升翻红，截止收盘，涨0.02%，报31601.45点；国企指数涨0.39%，报12746.78点；红筹指数跌0.83%，报4525.47点。大市成交1101.89亿港元。资金流向方面，沪股通净流入14.15亿，港股通（沪）净流出为0.26亿。深港通资金流向方面，深股通净流入0.92亿，港股通（深）净流入为2.52亿。三桶油走低，跌1.9%，领跌蓝筹；中石油跌0.77%，中石化跌0.37%。农行千亿定增带动内银大涨。其中，涨5.37%，涨1.83%，涨1%，涨1.06%，涨1.13%，涨0.78%。农业银行昨日晚间发布了公告，称该行以非公开发行方式发行不超过274.73亿股A股，募集资金不超过人民币1000亿元（含）。所募资金扣除相关发行费用后将全部用于补充本行的核心一级资本。午后股价大幅跳水，跌8.93%，午后盘初股价一度涨逾8%。午间金斯瑞生物科技（01548）公布癌症治疗研究与发展免疫治疗发展进展，子公司南京传奇正式收到由国家食品药品监督管理局授出的有关LCAR-B38MCAR-T用于自体回输的临床试验批件。此前，截止3月12日，港股通持股比例增至8.54%。据统计，2018年以来净流入金额高达8.86亿元，40次入选港股通十大成活跃股；2018年3月份以来，南下资金也持续流入近3亿，高达2.9亿元。受金斯瑞生物科技闪跌影响，港股生物医药股全线走低。其中，跌2.82%，跌2.71%，跌2.44%，跌2.43%。海航旗下地块63.59亿卖给，股价大涨4.98%，一度大涨8.6%。3月9日早间，会德丰一纸公告宣布，公司将以63.59亿港元的价格从海航集团子公司手中收购香港的一幅地块，该笔交易预计将在3月29日或在此之前签署买卖协议。昨日大涨近3%，今日再涨0.61%，报价462.8港元。腾讯将于下周三（21日）公布全年业绩，综合30家中外券商的平均目标价为490.6元，评“买入”或“跑赢大市”的券商占超过9成，包括及。 '
+            '昨晚美股道指及标普皆高开低收，唯纳指小幅高开后，逐步向上，并创历史新高。已印证本文早前提及要追入科技股的说法。纳指在2月初大幅回落后，已经重拾升轨再破顶。时间上，仅用了6个星期，为历史以来，最高速及最短时间的反弹。如美国金融市场之负面消息可以静下来，相信道指及标普急速反弹再破顶的日子，很快会重临。港股早上收跌86点。午后开市，继续在窄幅区间波动。昨日恒指收升598点，今天小幅调整再横行，也算是健康及合理的现象。多家内银将于本月底公布业绩，但近日已经有资金追入。科技股及手机设备股亦有买盘吸纳。恒指持续在高位企稳，相信很快就可以再突破向上冲。内地机构将中银监和中保监合并，成立中国银行保险监督管理委员会。主要统一监督和管理银行和保险业。内银稍见造好，但保险股回落。午后沪深两市继续下滑，虽有小幅反弹，但也欠缺动力，齐齐以近低位收市。发布研报点评农业银行定增方案称，重申农行作为A股市场的首推标的，A股目标价对应1.35x2018eP/B，上涨空间58.8%。中金公司称，此次定增符合市场预期，认购者主要是现有大股东和国有企业并有较长锁定期，降低了二级市场股价压力。假设农行发行募集1000亿，静态测算定增1000亿元可提升3Q17核心一级资本充足率0.8ppt，弥补与其他可比同业的资本缺口。责任编辑：张海营 ',
+ 'resource': '新浪港股',
+ 'tag': ' 港股',
+ 'time': '2018年03月13日 16:13',
+ 'title': '收评：恒指尾盘拉升翻红涨0.02% 农业银行大涨超5%',
+ 'url': 'http://finance.sina.com.cn/stock/hkstock/marketalerts/2018-03-13/doc-ifyscsmv1206616.shtml'}
+2018-03-13 16:42:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/hkstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:50 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/hkstock/
+2018-03-13 16:42:50 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:52 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/
+2018-03-13 16:42:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/thirdmarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:53 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/thirdmarket/
+2018-03-13 16:42:53 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:54 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:42:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/fund20year/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:56 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/fund20year/
+2018-03-13 16:42:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/newstock/zrzdt/2018-03-13/doc-ifysfnrh8106838.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:57 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/newstock/zrzdt/2018-03-13/doc-ifysfnrh8106838.shtml
+2018-03-13 16:42:57 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/newstock/zrzdt/2018-03-13/doc-ifysfnrh8106838.shtml
+2018-03-13 16:42:57 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/newstock/zrzdt/2018-03-13/doc-ifysfnrh8106838.shtml>
+{'content': '来源：证券时报网2018年3月12日夜间，证监会网站显示，宁德时代新能源科技股份有限公司（简称宁德时代或英文缩写CATL）更新了首次公开发行招股说明书（申报稿），拟在创业板上市，募资资金仍旧为131.2亿元、发行股份数量不超过2.17亿股，用于动力锂电池的生产基地、动力与储能电池研发两个项目建设。值得注意的是，这是继富士康之后，第二家有望在A股上市的新经济企业。近期，富士康首发上会已经获得证监会通过，从2月1日，富士康股份招股书申报稿上报之日算起，到过会仅仅用了36天，富士康股份创造了A股市场IPO的新速度。此次宁德时代更新招股说明书后，上市进程有望加速。业内人士分析认为，“独角兽”宁德时代更新招股书、上市进度或将提速，全球动力电池格局改变的起点。随着IPO进程的提速，宁德时代成为近期投资者关注的焦点，在互动平台中，多家公司表明与宁德时代有关联。称，参股的联合创投公司间接持有宁德时代股份。表示，与宁德时代除电池盒上盖项目外，目前双方有新的项目在洽谈中。称，于2016年参与设立的珠海广发信德环保产业投资基金合伙企业已投资宁德时代等项目。称，宁德时代系子公司卓与自动化客户。称，宁德时代是公司控股子公司华荣化工的重要客户。表示，公司目前与宁德时代有业务往来，为公司电解液主要客户之一。表示，公司与宁德时代有业务往来。那么，宁德时代上市后，那些上市公司值得关注，据分析，概念股和独角兽的关系主要分为以下几大类：1）投资关系：概念股公司或其子公司入股了“独角兽”，持股比例及投资金额是判断其受益程度的线索。2）控股股东投资关系：概念股公司的幕后大boss（即控股股东）入股了“独角兽”，形成间接投资关系。3）合资关系：概念股公司与“独角兽”是合伙人，一起持有一家公司的股份。4）被投资关系：概念股公司被“独角兽”入股了。5）业务合作关系：概念股公司和 '
+            '“独角兽”做生意，有较为深度的业务往来，主要为客户关系及供应商关系。据此分析，中信证券认为，以下宁德时代概念股或值得关注。责任编辑：张恒 ',
+ 'resource': '',
+ 'tag': ' 新股',
+ 'time': '2018年03月13日 16:25',
+ 'title': '宁德时代IPO或将进入绿色通道 相关概念股一览(附股)',
+ 'url': 'http://finance.sina.com.cn/stock/newstock/zrzdt/2018-03-13/doc-ifysfnrh8106838.shtml'}
+2018-03-13 16:42:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/qinghaichuntian/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:58 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/qinghaichuntian/
+2018-03-13 16:42:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:42:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/s/2018-03-13/doc-ifyscsmv1134688.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:42:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/s/2018-03-13/doc-ifyscsmv1134688.shtml
+2018-03-13 16:42:59 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/s/2018-03-13/doc-ifyscsmv1134688.shtml
+2018-03-13 16:42:59 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/s/2018-03-13/doc-ifyscsmv1134688.shtml>
+{'content': '来源：市界 '
+            '李章洪“上阵父子兵”，对于如今身陷囹圄的刘德群、刘晓庆父女来说，这句话有不一样的味道。3月13日早间，上市公司（002447）发布公告，称公司2018年3月12日收到常州市公安局直属分局发给大连证监局的情况通报函，获悉公司实际控制人刘德群、原董事长刘晓庆、原高级管理人员林春霖因涉嫌操纵证券市场、内幕交易被常州市公安局直属分局依法刑事拘留。在3月12日晚间的公告中，晨鑫科技称，公司日常经营运作正常，上述相关人员被采取强制措施未对公司产生重大影响。目前，晨鑫科技股票已停牌。值得注意的是，如果刘晓庆被抓的消息提前3天，晨鑫科技公告里“原董事长刘晓庆”的表述，会少一个“原”字。公告显示，晨鑫科技于3月9日召开了董事会会议，在时任董事长刘晓庆缺席的情况下，直接重新选举了时任董事冯文杰担任公司董事长。而在2017年11月10日召开的第四届董事会一次会议上，刘晓庆刚刚被选举为董事长。对于这场急不可耐的换帅，有猜测称，晨鑫科技可能提前获知刘晓庆被刑事拘留的信息，赶在消息传出之前进行了换选。3月13日午间，就上述猜测的相关问题，市界向晨鑫科技发送了求证邮件，截至发稿，尚未收到回复。对于重新选举董事长的原因，晨鑫科技早在公告中称，公司已变更为互联网和相关服务行业，主要以体育类及电竞类游戏为核心，打造区块链技术在电子竞技和游戏行业的技术应用。而董事冯文杰在互联网行业深耕多年，拥有丰富的互联网创业经验及独到的运营理念。实际上，1987年出生的刘晓庆虽然比冯文杰小了整整10岁，但是其商场经验并不逊色于后者多少。早在2008年，大专毕业、年仅21岁的刘晓庆已开始在公司担任董事和销售部经理。2016年10月，刘晓庆接任壹桥股份董事长。彼时，“刘晓庆”三个字一度风靡各大财经榜单，因为时年29岁的她是A股最年轻女董事长，坐拥数亿身家。刘晓庆“A股最年轻女董事长”的声名，得益于此次与她一同被抓的父亲刘德群。资料显示，刘德群是晨鑫科技实际控制人，目前持有公司股份3.75亿，持股比例为26.23%。刘德群早在2016年就已将董事长一职交给女儿刘晓庆。截至被抓之时，作为实控人的刘德群没有在晨鑫科技担任任何职务。值得关注的是，在卸任前一年和卸任当年，刘德群表现出了对资金极度渴求。市界统计发现，在2015年和2016年两年间，刘德群及其女儿和女婿，通过减持套现超过20亿元，减持比例占公司股份超过10%。实际上，相比“晨鑫科技”这个名字来说，A股市场可能更熟悉“壹桥股份”。据晨鑫科技公告显示，壹桥股份在2017年完成资产重组之后，于2018年2月2日将证券简称更改为了现名。“晨鑫科技”是三年内的第4个名字。图片来源@（000681）2015年初，公司将“壹桥苗业”更为“壹桥海参”。一年之后的2016年10月，因主营业务为包括海参行业和互联网泛娱行业的双主业，“壹桥海参”更名为“壹桥股份”。最近两次更名的背后，是一场资产置换重组大戏。2016年8月，名称尚是“壹桥海参”的晨鑫科技，将拥有的部分海参苗、海参苗养殖配套设施，和部分土地使用权、海域使用权作为置出资产，置换南昌京鑫、冯文杰分别持有的壕鑫互联54.99%股权、0.01%股权。彼时，壕鑫互联100%股权估值18亿元。公告显示，冯文杰同时也是南昌京鑫实际控制人。而南昌京鑫持有壕鑫互联99%的股权。壕鑫互联成立于2014年，是一家游戏公司，乐视体育曾是其重要客户，收入来自于自有平台运营游戏及第三方平台联运游戏获得的游戏收益。2016年1月至4月，壕鑫科技营业收入仅95万元，亏损730万元；而在2015年，营业收入仅为54万元，亏损563万元。完成资产置换后的壹桥海参，成功实现了游戏和海参的双主业运营，顺理成章地甩脱了“海参”名号，更名“壹桥股份”。然而，“双主业”并不是此次资产置换的终点。2017年10月17日，壹桥股份公告称，拟将海珍品养殖、加工、销售业务相关资产及部分负债出售予上市公司控股股东、实际控制人刘德群，刘德群以现金作为支付对价。交易价格为15.71亿元。交易完成后，壹桥股份将主要经营移动游戏业务，不再从事海珍品相关业务。据《长江商报》报道，此次交易的资金，正是来自于刘德群父女此前的减持套现。2017年10月31日，壹桥股份发布公告，称拟以自有资金收购南昌京鑫优贝网络科技中心（有限合伙）持有的壕鑫互联（北京）网络科技有限公司45.00%的股权。市界通过第三方软件天眼查查询发现，2018年1月25日，壹桥股份完成了工商信息变更。变更之后，冯文杰代替时任董事长刘晓庆，担任公司法人代表。公司地址由瓦房店市谢屯镇变更至大连市中山区。2018年2月2日，壹桥股份更名“晨鑫科技”。至此，原本从事海珍品业务的上市公司壹桥股份，在短短一年多内，通过资产置换和重组的方式，顺利将主营业务跨界变更为互联网泛娱业务，还涉足时下火热的区块链业务。对于壕鑫互联来说，经历完这场时长1年多的置换重组之后，算是变相完成了借壳。而如今，壕鑫互联在置换重组前的实际控制人冯文杰，已经坐上上市公司董事长的宝座。责任编辑：凌辰 '
+            'SF179',
+ 'resource': '新浪证券综合',
+ 'tag': ' 证券',
+ 'time': '2018年03月13日 15:59',
+ 'title': '亿万富豪父女双双被抓 曾操盘晨鑫科技2年套现20亿',
+ 'url': 'http://finance.sina.com.cn/stock/s/2018-03-13/doc-ifyscsmv1134688.shtml'}
+2018-03-13 16:43:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/investvq/2018-03-13/doc-ifyscsmu9394099.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:00 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/investvq/2018-03-13/doc-ifyscsmu9394099.shtml
+2018-03-13 16:43:00 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/investvq/2018-03-13/doc-ifyscsmu9394099.shtml
+2018-03-13 16:43:00 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/investvq/2018-03-13/doc-ifyscsmu9394099.shtml>
+{'content': '新浪财经讯上线3个月以来，承蒙股民信任，已收到超2100位股民的维权申请，其中超1400位申请符合维权条件，已被专业律师受理。在处理维权的时候，股民也向我们表达了他们在维权过程中遇到的问题，新浪股民维权平台本着专业的态度，特别邀请了9位平台知名律师，就大家普遍关注的问题进行了解答，以下是广东环宇京茂律师事务所谢良律师的维权建议：和往年相比，谢良律师今年经手的股民维权案件，在可索赔的股票数量和参与索赔的股民数量上来说，感觉明显比往年有所增多，这应该主要是与近年来证监会不断加大对上市公司信息披露的监管力度直接相关。从谢良律师经办的案件来看，目前股民维权索赔主要集中在上海、北京、广州、南京等经济相对发达地区，虽然部分省份的省会城市也有，但股民索赔的参与度明显偏低。一方面这些经济相对发达地区本身上市公司数量基数就比较大，因信披违规受罚的数量也就相应来说较多；另一方面，这些地区的司法环境相对而言也较好，股民参与索赔的积极性也相对较高。对于可能涉嫌违规的上市公司事件，股民是否有维权可能，关键取决于这些涉嫌违规事件能否被证监会或有关机关最终查实并被认定确实存在信息披露违法行为。目前，根据相关法律规定，在证券虚假陈述索赔领域，只有在信息披露义务人（一般情况主要是上市公司，特殊情况还包括其他主体）因信息披露违法被证监会处罚或者被法院作出刑事判决的情况下，相关权益受损的股民才可有索赔成功的可能。随着我国证券市场的不断发展，很明显股票与法律之间的相关度越来越高，谢良律师建议广大中小投资者在维权方面，尽可能咨询专业律师意见；另外，也建议投资者多多了解证券方面的法律法规，进一步提高法律意识。股市的风险性本身就很高，谢良律师建议广大中小投资者在投资股票时，一方面要注意市场风险，另一个方面也要注意相关股票的法律风险。尽量远离那些只喜欢“讲故事”的股票以违规公司的股票，发现自己购买的股票背后的上市公司有违法违规导致股票下跌的情形时，尽可能积极维权。谢良律师表示，投资者若参与维权，需要注意的问题主要是是否符合索赔条件以及是否超过诉讼时效等，尤其要注意诉讼时效问题，以免因错过诉讼时效而白白错过索赔机会。目前，正值《证券法》即将修订之际，建议立法机关一方面应进一步提高对虚假陈述、内幕交易、操纵市场、“老鼠仓”等证券市场常见违法行为的违法成本，另一方面，应进一步明确投资者权益保护的具体范围和标准，尤其是应加大对受害投资者的赔偿力度。最后，谢良律师也发来祝愿：祝新浪股民维权平台越办越好！持续为投资者保驾护航！（以上均来自律师个人观点，不代表新浪股民维权平台意见。）责任编辑：徐彩月 ',
+ 'resource': '新浪财经',
+ 'tag': '',
+ 'time': '2018年03月13日 09:16',
+ 'title': '315维权记录|谢良：股民要远离只喜欢"讲故事"的公司',
+ 'url': 'http://finance.sina.com.cn/stock/investvq/2018-03-13/doc-ifyscsmu9394099.shtml'}
+2018-03-13 16:43:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/jhzx/2018-03-13/doc-ifyscsmv1206733.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/jhzx/2018-03-13/doc-ifyscsmv1206733.shtml
+2018-03-13 16:43:01 [finance_spider] DEBUG: success download url :  http://finance.sina.com.cn/stock/jhzx/2018-03-13/doc-ifyscsmv1206733.shtml
+2018-03-13 16:43:01 [scrapy.core.scraper] DEBUG: Scraped from <200 http://finance.sina.com.cn/stock/jhzx/2018-03-13/doc-ifyscsmv1206733.shtml>
+{'content': '3月13日，国务院机构改革方案提请十三届全国人大一次会议审议。方案显示，中国金融监管体制延续多年的“一行三会”结构，出现重大调整，业监督管理委员会和中国保险监督管理委员会合并，组建中国银行保险监督管理委员会。一旦该方案通过审议，中国金融监管体制将变成“一行两会”。即：中国人民银行、中国证监会、中国银保监会。在“一行三会”中，为什么“保险监督管理委员会”和“银行行业监督管理委员会”合并，而不包括证监会？全国政协委员、全国社保基金理事会会长楼继伟表示，在资本充足率、偿付能力以及自身风险匹配能力方面“保险”和“银行”有类似性，两者都管理自身的资本收益匹配、风险收益匹配和久期匹配。而证监会是管信息披露真实性，特别是管欺诈，属于投资消费者保护范畴，它对证券公司没有资本金要求。银保合并有相近性，而证监会不一样。责任编辑：张恒 ',
+ 'resource': '新浪证券综合',
+ 'tag': ' 证券',
+ 'time': '2018年03月13日 16:13',
+ 'title': '楼继伟回应为何合并银监会保监会 而不包括证监会？',
+ 'url': 'http://finance.sina.com.cn/stock/jhzx/2018-03-13/doc-ifyscsmv1206733.shtml'}
+2018-03-13 16:43:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php> from <GET http://vip.stock.finance.sina.com.cn/portfolio/main.php>
+2018-03-13 16:43:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:02 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:43:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:03 [finance_spider] DEBUG: no url ---http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php
+2018-03-13 16:43:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/dfsmcyy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/dfsmcyy/
+2018-03-13 16:43:04 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php> from <GET http://vip.stock.finance.sina.com.cn/portfolio/main.php>
+2018-03-13 16:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/bmdzg/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:05 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/bmdzg/
+2018-03-13 16:43:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/hjfx/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:05 [finance_spider] DEBUG: no url ---http://i.finance.sina.com.cn/login.html?from=http://vip.stock.finance.sina.com.cn/portfolio/main.php
+2018-03-13 16:43:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:05 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/hjfx/index.shtml
+2018-03-13 16:43:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/i_list_9_34353.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:05 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/i_list_9_34353.html
+2018-03-13 16:43:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/event/2018lh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:06 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/event/2018lh/
+2018-03-13 16:43:06 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:07 [scrapy.extensions.logstats] INFO: Crawled 294 pages (at 57 pages/min), scraped 12 items (at 7 items/min)
+2018-03-13 16:43:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/dfsmcyy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:07 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/dfsmcyy/
+2018-03-13 16:43:07 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/bond/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:09 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/bond/
+2018-03-13 16:43:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/
+2018-03-13 16:43:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/tzzs/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:10 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/tzzs/index.shtml
+2018-03-13 16:43:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/zjzt/gold_2014.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:11 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/zjzt/gold_2014.php
+2018-03-13 16:43:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:43:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/jyb/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:11 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/jyb/index.shtml
+2018-03-13 16:43:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/hq/BTCBITSTAMP.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/hq/BTCBITSTAMP.shtml
+2018-03-13 16:43:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:12 [finance_spider] DEBUG: no url ---http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php
+2018-03-13 16:43:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:12 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php
+2018-03-13 16:43:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/byfx/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:13 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/byfx/index.shtml
+2018-03-13 16:43:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:13 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:43:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:14 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml
+2018-03-13 16:43:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:43:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/bond/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/bond/
+2018-03-13 16:43:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/wh/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:15 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/wh/index.shtml
+2018-03-13 16:43:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:16 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:43:16 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:43:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/forex/ask/index.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:18 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/forex/ask/index.php
+2018-03-13 16:43:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:18 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:43:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:18 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml
+2018-03-13 16:43:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:43:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/wh/hbfx/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/realstock/company/sh000001/nc.shtml
+2018-03-13 16:43:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#jchl_forex> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:20 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/wh/hbfx/index.shtml
+2018-03-13 16:43:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:20 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:43:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#cny_forex> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:21 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:43:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:21 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml
+2018-03-13 16:43:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/bonds.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:22 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/bonds.shtml
+2018-03-13 16:43:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#usd_forex> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:22 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:43:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/forex/forex.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:23 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/forex/forex.php
+2018-03-13 16:43:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/XPD.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/XPD.shtml
+2018-03-13 16:43:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#all_forex> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:24 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:43:24 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/XPT.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:25 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/XPT.shtml
+2018-03-13 16:43:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#jbhl_forex> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:25 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:43:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/qh/pzyj/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:25 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/qh/pzyj/index.shtml
+2018-03-13 16:43:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/XAG.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:26 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/XAG.shtml
+2018-03-13 16:43:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:26 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml
+2018-03-13 16:43:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/XAU.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/XAU.shtml
+2018-03-13 16:43:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://slide.finance.sina.com.cn/i_list_9_38679.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:27 [finance_spider] DEBUG: no url ---http://slide.finance.sina.com.cn/i_list_9_38679.html
+2018-03-13 16:43:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/futures/ask/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:27 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/futures/ask/
+2018-03-13 16:43:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/gold/AGTD/quote.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:28 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/gold/AGTD/quote.shtml
+2018-03-13 16:43:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/gold/AUTD/quote.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/gold/AUTD/quote.shtml
+2018-03-13 16:43:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/jsq.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:30 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/jsq.html
+2018-03-13 16:43:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gzqh/fxyj/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:30 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gzqh/fxyj/index.shtml
+2018-03-13 16:43:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/view/vCffex_Positions_cjcc.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:30 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/view/vCffex_Positions_cjcc.php
+2018-03-13 16:43:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/hq/BTCbtcchina.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/hq/BTCbtcchina.shtml
+2018-03-13 16:43:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#qz_qh> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:31 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:43:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/hq/CFTCDINIW.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/hq/CFTCDINIW.shtml
+2018-03-13 16:43:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:32 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/view/vFutures_Positions_cjcc.php
+2018-03-13 16:43:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/bonds.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:33 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/bonds.shtml
+2018-03-13 16:43:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/fxanalyst/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:34 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/fxanalyst/
+2018-03-13 16:43:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#hbphall> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:34 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:43:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/ibor.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/ibor.shtml
+2018-03-13 16:43:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/fund_center/index.html#jzkfall> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:36 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/fund_center/index.html
+2018-03-13 16:43:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/hq/DINIW.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:37 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/hq/DINIW.shtml
+2018-03-13 16:43:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://stock.finance.sina.com.cn/option/quotes.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:37 [finance_spider] DEBUG: no url ---http://stock.finance.sina.com.cn/option/quotes.html
+2018-03-13 16:43:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vFinanceAnalyze/kind/performance/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:38 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vFinanceAnalyze/kind/performance/index.phtml
+2018-03-13 16:43:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/paijia.html#0> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:38 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/paijia.html
+2018-03-13 16:43:38 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/dzjy/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:39 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/dzjy/index.phtml
+2018-03-13 16:43:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/jsq.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vDYData/kind/znzd/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:39 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/jsq.html
+2018-03-13 16:43:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:39 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vDYData/kind/znzd/index.phtml
+2018-03-13 16:43:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/help/15.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/help/15.html
+2018-03-13 16:43:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/qgqp/index.phtml?t=sh_a> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:41 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/qgqp/index.phtml?t=sh_a
+2018-03-13 16:43:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/comm_all.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:41 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/comm_all.html
+2018-03-13 16:43:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vIR_TargetPrice/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:42 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vIR_TargetPrice/index.phtml
+2018-03-13 16:43:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/bonds.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:43 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/bonds.shtml
+2018-03-13 16:43:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingNewest/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:43 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vIR_RatingNewest/index.phtml
+2018-03-13 16:43:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/help/1.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:44 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/help/1.html
+2018-03-13 16:43:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/xsjj/index.phtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:45 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/go.php/vInvestConsult/kind/xsjj/index.phtml
+2018-03-13 16:43:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/tblog/2011-06-20/166.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:45 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/tblog/2011-06-20/166.html
+2018-03-13 16:43:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/corp/view/vCB_BulletinGather.php?stock_str=&gg_date=&ftype=0> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:46 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/corp/view/vCB_BulletinGather.php?stock_str=&gg_date=&ftype=0
+2018-03-13 16:43:46 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/hs300.html#qz> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:47 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/hs300.html
+2018-03-13 16:43:47 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/qizhi/hs300.html#gxzs> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:48 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/qizhi/hs300.html
+2018-03-13 16:43:48 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:49 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/CFCTGC.shtml
+2018-03-13 16:43:49 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_4> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:51 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/spotprice.shtml
+2018-03-13 16:43:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/future/hf.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:52 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/future/hf.html
+2018-03-13 16:43:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://vip.stock.finance.sina.com.cn/quotes_service/view/qihuohangqing.html#titlePos_1> from <GET http://finance.sina.com.cn/money/future/hangqing.shtml>
+2018-03-13 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/fund/compare/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:55 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/fund/compare/
+2018-03-13 16:43:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/wh/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:55 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/wh/index.shtml
+2018-03-13 16:43:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://biz.finance.sina.com.cn/forex/ask/index.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/box/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:56 [finance_spider] DEBUG: no url ---http://biz.finance.sina.com.cn/forex/ask/index.php
+2018-03-13 16:43:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:56 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/box/
+2018-03-13 16:43:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:56 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:43:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:56 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/wh/fxyc/index.shtml
+2018-03-13 16:43:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/realstock/income_statement/2017-12-31/issued_pdate_de_1.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:57 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/realstock/income_statement/2017-12-31/issued_pdate_de_1.html
+2018-03-13 16:43:57 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:58 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/qh/qsyw/index.shtml
+2018-03-13 16:43:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/sl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:58 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/sl/
+2018-03-13 16:43:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/quotes_service/view/qihuohangqing.html#titlePos_0> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:58 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/quotes_service/view/qihuohangqing.html
+2018-03-13 16:43:58 [finance_spider] DEBUG: error page !
+2018-03-13 16:43:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/data/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:43:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/data/
+2018-03-13 16:43:59 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/zqbjh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:00 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/zqbjh/
+2018-03-13 16:44:00 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:00 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/finance/gjs/hjzx/index.shtml
+2018-03-13 16:44:00 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:01 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/q/view/vGold_Matter_History.php
+2018-03-13 16:44:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/cpbd/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:02 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/cpbd/
+2018-03-13 16:44:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#hj_qh> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:02 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:02 [finance_spider] DEBUG: no url ---http://stock.finance.sina.com.cn/futures/view/vGoldEtf.php
+2018-03-13 16:44:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:02 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:44:02 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/jyts/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:03 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/jyts/
+2018-03-13 16:44:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:44:04 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:05 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:44:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:05 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:44:05 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:06 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:44:06 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:07 [scrapy.extensions.logstats] INFO: Crawled 393 pages (at 99 pages/min), scraped 12 items (at 0 items/min)
+2018-03-13 16:44:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:08 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/
+2018-03-13 16:44:08 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:09 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:44:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/jyts/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/jyts/
+2018-03-13 16:44:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:10 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:44:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/forex/hq/DINIW.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/forex/hq/DINIW.shtml
+2018-03-13 16:44:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/quotes_service/view/qihuohangqing.html#titlePos_1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:13 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/quotes_service/view/qihuohangqing.html
+2018-03-13 16:44:13 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/BO.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/BO.shtml
+2018-03-13 16:44:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/future/hf.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/future/hf.html
+2018-03-13 16:44:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:15 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:15 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:15 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD
+2018-03-13 16:44:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/oilroll.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/oilroll.html
+2018-03-13 16:44:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:17 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:17 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:17 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD
+2018-03-13 16:44:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/OIL.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/OIL.shtml
+2018-03-13 16:44:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:18 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:18 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/future/hf.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:18 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD
+2018-03-13 16:44:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/future/hf.html
+2018-03-13 16:44:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:19 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:20 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/uslist.html#titlePos_2> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:20 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/uslist.html
+2018-03-13 16:44:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:20 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD
+2018-03-13 16:44:20 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:21 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:21 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:21 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:21 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%B2%C9%B9%BA%BE%AD%C0%ED%C8%CB%D6%B8%CA%FD
+2018-03-13 16:44:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://roll.finance.sina.com.cn/s/channel.php?ch=03#col=205&spec=&type=&ch=03&k=&offset_page=0&offset_num=0&num=60&asc=&page=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:22 [finance_spider] DEBUG: no url ---http://roll.finance.sina.com.cn/s/channel.php?ch=03
+2018-03-13 16:44:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:22 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/forex/view/vDailyFX_More.php
+2018-03-13 16:44:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/cnlist.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/cnlist.html
+2018-03-13 16:44:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:23 [finance_spider] DEBUG: no url ---http://money.finance.sina.com.cn/forex/view/vDailyFX_Detail.php?country=%C3%C0%B9%FA&event=ISM%D6%C6%D4%EC%D2%B5%D6%B8%CA%FD
+2018-03-13 16:44:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml#f_zscf> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:23 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:23 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#aplush> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://stock.finance.sina.com.cn/hkstock/view/stock.php?code=00005&level2=1> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:24 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:24 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:24 [finance_spider] DEBUG: no url ---http://stock.finance.sina.com.cn/hkstock/view/stock.php?code=00005&level2=1
+2018-03-13 16:44:24 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/uslist.html#titlePos_2> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:25 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/uslist.html
+2018-03-13 16:44:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_hk_volume> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:25 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:25 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml#f_bkzf> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:26 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/moneyflow/#sczjlx> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:26 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/moneyflow/
+2018-03-13 16:44:26 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/cnlist.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:27 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/cnlist.html
+2018-03-13 16:44:27 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou#stock_sh_tor> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:28 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:44:28 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml#f_zscf> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:29 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sh_amount> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:29 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:29 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/uslist.html#titlePos_2> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:30 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/uslist.html
+2018-03-13 16:44:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sh_down> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:30 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:30 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:30 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock> from <GET http://i.finance.sina.com.cn/zixuan,stock>
+2018-03-13 16:44:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml#f_bkzf> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:31 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:31 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/#stock_sh_up> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:32 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/
+2018-03-13 16:44:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/cnlist.html> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:32 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/cnlist.html
+2018-03-13 16:44:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:32 [finance_spider] DEBUG: no url ---http://i.finance.sina.com.cn/login.html?from=http%3A%2F%2Fi.finance.sina.com.cn%2Fzixuan%2Cstock
+2018-03-13 16:44:32 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://vip.stock.finance.sina.com.cn/mkt/?f=caishou> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:33 [finance_spider] DEBUG: no url ---http://vip.stock.finance.sina.com.cn/mkt/?f=caishou
+2018-03-13 16:44:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:33 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/
+2018-03-13 16:44:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/sector.shtml#f_zscf> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:33 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/sector.shtml
+2018-03-13 16:44:33 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://live.finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:34 [finance_spider] DEBUG: no url ---http://live.finance.sina.com.cn/
+2018-03-13 16:44:34 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/euro.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:35 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/euro.shtml
+2018-03-13 16:44:35 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/euro.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:36 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/euro.shtml
+2018-03-13 16:44:36 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/euro.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:37 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/euro.shtml
+2018-03-13 16:44:37 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/euro.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:39 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/euro.shtml
+2018-03-13 16:44:39 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/euro.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:40 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/euro.shtml
+2018-03-13 16:44:40 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/asia.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:41 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/asia.shtml
+2018-03-13 16:44:41 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/data/#stock-schq-hgt> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:42 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/data/
+2018-03-13 16:44:42 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/data/#stock-schq-hgt> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:43 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/data/
+2018-03-13 16:44:43 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:44 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/
+2018-03-13 16:44:44 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/dfsmcyy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:45 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/dfsmcyy/
+2018-03-13 16:44:45 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET http://finance.sina.com.cn/zt_d/2018dfzq/> from <GET http://finance.sina.com.cn/zt_d/2018dfzq>
+2018-03-13 16:44:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futures/quotes/CL.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:48 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futures/quotes/CL.shtml
+2018-03-13 16:44:48 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:50 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:44:50 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/globalindex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:51 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/globalindex/
+2018-03-13 16:44:51 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/data/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:52 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/data/
+2018-03-13 16:44:52 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/meeting/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:54 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/meeting/
+2018-03-13 16:44:54 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zl/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:55 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zl/
+2018-03-13 16:44:55 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/thirdmarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:56 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/thirdmarket/
+2018-03-13 16:44:56 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/trust/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:57 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/trust/
+2018-03-13 16:44:57 [finance_spider] DEBUG: error page !
+2018-03-13 16:44:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/insurance/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:44:59 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/insurance/
+2018-03-13 16:44:59 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/bank/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:00 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/bank/
+2018-03-13 16:45:00 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/money/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:01 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/money/
+2018-03-13 16:45:01 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/bond/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:03 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/bond/
+2018-03-13 16:45:03 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/nmetal/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:04 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/nmetal/
+2018-03-13 16:45:04 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/forex/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:06 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/forex/
+2018-03-13 16:45:06 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:07 [scrapy.extensions.logstats] INFO: Crawled 470 pages (at 77 pages/min), scraped 12 items (at 0 items/min)
+2018-03-13 16:45:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/futuremarket/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:07 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/futuremarket/
+2018-03-13 16:45:07 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:08 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (meta refresh) to <GET http://client.sina.com.cn/zt/201801yxtzzm/index.shtml> from <GET http://finance.sina.com.cn/zt_d/2018dfzq/>
+2018-03-13 16:45:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/fund/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:09 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/fund/
+2018-03-13 16:45:09 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/usstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:10 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/usstock/
+2018-03-13 16:45:10 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/hkstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:11 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/hkstock/
+2018-03-13 16:45:11 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/newstock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:12 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/newstock/
+2018-03-13 16:45:12 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/stock/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/stock/
+2018-03-13 16:45:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/focus/50rlt2018nh/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:14 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/focus/50rlt2018nh/
+2018-03-13 16:45:14 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/dfsmcyy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:15 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/dfsmcyy/
+2018-03-13 16:45:15 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/mobile/comfinanceweb.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:17 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/mobile/comfinanceweb.shtml
+2018-03-13 16:45:17 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:18 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/
+2018-03-13 16:45:18 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/dfsmcyy/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:19 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/dfsmcyy/
+2018-03-13 16:45:19 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://finance.sina.com.cn/zt_d/bmdzg/> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:21 [finance_spider] DEBUG: no url ---http://finance.sina.com.cn/zt_d/bmdzg/
+2018-03-13 16:45:21 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://client.sina.com.cn/zt/201801yxtzzm/index.shtml> (referer: http://finance.sina.com.cn/)
+2018-03-13 16:45:22 [finance_spider] DEBUG: no url ---http://client.sina.com.cn/zt/201801yxtzzm/index.shtml
+2018-03-13 16:45:22 [finance_spider] DEBUG: error page !
+2018-03-13 16:45:22 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-13 16:45:22 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 205418,
+ 'downloader/request_count': 509,
+ 'downloader/request_method_count/GET': 509,
+ 'downloader/response_bytes': 11498830,
+ 'downloader/response_count': 509,
+ 'downloader/response_status_count/200': 485,
+ 'downloader/response_status_count/301': 4,
+ 'downloader/response_status_count/302': 20,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 13, 8, 45, 22, 719405),
+ 'item_scraped_count': 12,
+ 'log_count/DEBUG': 1486,
+ 'log_count/INFO': 13,
+ 'request_depth_max': 1,
+ 'response_received_count': 483,
+ 'scheduler/dequeued': 509,
+ 'scheduler/dequeued/memory': 509,
+ 'scheduler/enqueued': 509,
+ 'scheduler/enqueued/memory': 509,
+ 'start_time': datetime.datetime(2018, 3, 13, 8, 39, 7, 282405)}
+2018-03-13 16:45:22 [scrapy.core.engine] INFO: Spider closed (finished)
